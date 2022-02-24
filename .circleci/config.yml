@@ -104,7 +104,8 @@ jobs:
 
   deploy:
     docker:
-      - image: majorz/rust-test-deploy:rust-nightly-2018-01-08
+  #    - image: majorz/rust-test-deploy:rust-nightly-2018-01-08
+       - image: majorz/x86_64-unknown-linux-gnu
 
     steps:
       - checkout
