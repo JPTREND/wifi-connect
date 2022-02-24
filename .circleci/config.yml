@@ -117,47 +117,47 @@ workflows:
   version: 2
   build:
     jobs:
-      - test:
-          filters:
-            branches:
-              only: /.*/
-            tags:
-              only: /.*/
+ #     - test:
+ #         filters:
+ #           branches:
+ #             only: /.*/
+ #           tags:
+ #             only: /.*/
       - aarch64:
-          requires:
-            - test
+ #        requires:
+ #          - test
           filters:
             branches:
               only: /.*/
             tags:
               only: /.*/
       - rpi:
-          requires:
-            - test
+ #         requires:
+ #           - test
           filters:
             branches:
               only: /.*/
             tags:
               only: /.*/
       - armv7hf:
-          requires:
-            - test
+#          requires:
+#            - test
           filters:
             branches:
               only: /.*/
             tags:
               only: /.*/
       - i386:
-          requires:
-            - test
+#          requires:
+#            - test
           filters:
             branches:
               only: /.*/
             tags:
               only: /.*/
       - amd64:
-          requires:
-            - test
+#          requires:
+#            - test
           filters:
             branches:
               only: /.*/
